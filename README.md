@@ -8,8 +8,8 @@ On y mettra des idées, des mini-projets et du code au fur et à mesure.
 
 ## 📂 Contenu actuel
 - `README.md` : description du projet
-- *(à venir)* `index.html` : une première page web
-- *(à venir)* `styles.css` : un peu de style pour notre site
+- `index.html` : une première page web
+- `styles.css` : un peu de style pour notre site
 
 ## 🚀 Prochaines étapes
 - Créer une page web d’accueil (`index.html`)
