@@ -17,7 +17,7 @@ On y mettra des idées, des mini-projets et du code au fur et à mesure.
 - Ajouter d’autres fichiers (scripts, idées, etc.)
 
 ## 💡 Comment contribuer
-1. Crée une branche ou propose un *Pull Request*  
+1. Crée une branche ou proposer un *Pull Request*  
 2. Ajoute tes fichiers ou améliore le code
 3. Décris tes changements dans le commit
 
