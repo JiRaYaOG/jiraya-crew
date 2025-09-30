@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #dfe6e9;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(241, 196, 15, 0.3);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #d4ac0d;
+}
+
+footer {
+  background-color: rgba(0,0,0,0.2);
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
