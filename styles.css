@@ -1,22 +1,27 @@
-/* 🎨 Style global */
+/* 🌌 Style global */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Orbitron", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #1e1e2f, #2b5876, #4e4376);
   color: #fff;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* 🎭 Header */
 header {
-  padding: 40px 20px;
+  padding: 60px 20px;
   background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0;
+  animation: neon 2s infinite alternate;
 }
 
 header p {
@@ -34,17 +39,20 @@ header p {
 .projects h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
+  color: #ffd700;
+  animation: neon 2s infinite alternate;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  margin: 10px auto;
-  padding: 15px;
-  border-radius: 12px;
-  width: 80%;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 85%;
   max-width: 500px;
   font-size: 1.2rem;
-  transition: transform 0.2s ease, background 0.3s ease;
+  transition: transform 0.25s ease, background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
@@ -55,17 +63,19 @@ header p {
 /* 👥 Section membres */
 .members {
   margin: 40px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 15px;
   width: 90%;
   max-width: 700px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .members h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #ffd700;
+  animation: neon 2s infinite alternate;
 }
 
 .members ul {
@@ -84,20 +94,20 @@ header p {
   border-bottom: none;
 }
 
-/* 🔗 Liens vers profils GitHub */
+/* 🔗 Liens GitHub */
 .members a {
   color: #00c3ff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .members a:hover {
   color: #ffd700;
-  text-shadow: 0px 0px 5px #ffd700;
+  text-shadow: 0px 0px 6px #ffd700;
 }
 
-/* 🌟 Style spécial pour toi (fondateur) */
+/* 🌟 Style spécial leader */
 .members li:first-child a {
   color: #ff4d4d;
   font-size: 1.3rem;
@@ -106,25 +116,40 @@ header p {
 /* 🎯 Bouton GitHub */
 .btn {
   display: inline-block;
-  margin: 30px 0;
-  padding: 12px 24px;
-  background: #00c3ff;
+  margin: 40px 0;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #00c3ff, #009ad6);
   color: #fff;
   font-size: 1.1rem;
-  border-radius: 8px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background: #009ad6;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffd700, #ff9900);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* 📌 Footer */
 footer {
   padding: 20px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
   font-size: 0.9rem;
-  margin-top: 30px;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* ✨ Animation néon pulsant pour titres */
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #009ad6;
+  }
+  50% {
+    text-shadow: 0 0 15px #00f0ff, 0 0 30px #00c3ff, 0 0 45px #009ad6;
+  }
+}
+
