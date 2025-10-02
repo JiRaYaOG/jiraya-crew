@@ -1,14 +1,25 @@
-/* 🌌 Style global */
+/* 🌌 Style global avec background cyberpunk animé */
 body {
   font-family: "Orbitron", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #1e1e2f, #2b5876, #4e4376);
   color: #fff;
   text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  /* 🔥 Dégradé animé cyberpunk */
+  background: linear-gradient(270deg, #1f1c2c, #928dab, #ff00cc, #00ffff);
+  background-size: 800% 800%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Animation pour le dégradé */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* 🎭 Header */
