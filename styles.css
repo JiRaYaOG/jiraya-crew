@@ -15,7 +15,6 @@ body {
   animation: gradientBG 15s ease infinite;
 }
 
-/* Animation pour le dégradé */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -124,6 +123,26 @@ header p {
   font-size: 1.3rem;
 }
 
+/* 👤 Avatars des membres */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 2px solid #00c3ff;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.members li:first-child .avatar {
+  border-color: #ff4d4d;
+}
+
+.avatar:hover {
+  transform: scale(1.2);
+  border-color: #ffd700;
+}
+
 /* 🎯 Bouton GitHub */
 .btn {
   display: inline-block;
@@ -163,4 +182,3 @@ footer {
     text-shadow: 0 0 15px #00f0ff, 0 0 30px #00c3ff, 0 0 45px #009ad6;
   }
 }
-
